@@ -1,0 +1,3 @@
+Bundle:
+- zsh auto complete
+- zsh syntax highlighting
