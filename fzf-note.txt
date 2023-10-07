@@ -1,0 +1,12 @@
+Command:
+
+CTRL + R
+-> Recent Command
+
+Command + CTRL + T:
+	+ tab (select list files)
+-> to fuzzy find through the current directory
+
+command + ** + enter:
+-> autocomplete
+
