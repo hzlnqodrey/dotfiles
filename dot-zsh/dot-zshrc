@@ -106,3 +106,37 @@ source $ZSH/oh-my-zsh.sh
 
 # Antigen Package
 source /opt/homebrew/share/antigen/antigen.zsh
+
+# ALIAS K8s
+alias k=kubectl
+alias kd='kubectl describe'
+alias kgp='kubectl get pod'
+alias kgd='kubectl get deploy'
+alias kgs='kubectl get svc'
+alias kgcm='kubectl get configmap'
+alias kgi='kubectl get ingress'
+alias kgnd='kubectl get nodes'
+alias wkgp='watch kubectl get pod'
+alias wkgn='watch kubectl get nodes'
+alias ktpd='kubectl top pod'
+alias ktpn='kubectl top nodes'
+
+# alias gcp
+alias gcvp='gcloud config get-value project'
+alias gcsp='gcloud config set project'
+
+# ALIAS GIT
+alias gad='git add'
+alias gcm='git commit -m'
+
+# open aliases
+alias
+
+# asdf Config
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# contextualize search cli
+# > atuin
+OME/.atuin/bin/env"
+
+
