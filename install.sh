@@ -192,3 +192,12 @@ csrutil status
 echo "(optional) Disable SIP for advanced yabai features."
 echo "(optional) Add sudoer manually:\n '$(whoami) ALL = (root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | awk "{print \$1;}") $(which yabai) --load-sa' to '/private/etc/sudoers.d/yabai'"
 echo "Installation complete...\n"
+
+# Asynq
+go get -u github.com/hibiken/asynq
+go install github.com/hibiken/asynq/tools/asynq@latest
+
+# Natural AI
+# Claude
+curl -fsSL https://claude.ai/install.sh | bash
+
