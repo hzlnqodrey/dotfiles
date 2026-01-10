@@ -139,4 +139,137 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # > atuin
 OME/.atuin/bin/env"
 
+# Django VirtualEnvWrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/Users/user_1/.pyenv/versions/3.10.4/bin/python3
+export PROJECT_HOME=$HOME/Devel
+source /Users/user_1/.pyenv/versions/3.10.4/bin/virtualenvwrapper.sh
 
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/user_1/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+
+# ALIAS K8s
+alias k=kubectl
+alias kd='kubectl describe'
+alias kgp='kubectl get pod'
+alias kgd='kubectl get deploy'
+alias kgs='kubectl get svc'
+alias kgcm='kubectl get configmap'
+alias kgi='kubectl get ingress'
+alias kgnd='kubectl get nodes'
+alias wkgp='watch kubectl get pod'
+alias wkgn='watch kubectl get nodes'
+alias ktpd='kubectl top pod'
+alias ktpn='kubectl top nodes'
+
+# ALIAS GIT
+alias gad='git add'
+alias gcm='git commit -m'
+alias stat="git status"
+alias gdiff="git diff HEAD"
+alias vdiff="git difftool HEAD"
+alias log="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias cfg="git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+alias push="git push"
+alias g="lazygit"
+
+# alias gcp
+alias gcvp='gcloud config get-value project'
+alias gcsp='gcloud config set project'
+
+# alias docker
+alias dockerkillall='[ -n "$(docker ps -q)" ] && docker rm -f $(docker ps -q) || echo "No running containers."'
+
+# alias AI Model
+alias zai="npx @z_ai/coding-helper"
+
+# [OPEN ALIASES] keep this command on so I can see which alias default already on this device
+#alias
+
+
+# asdf Config
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# contextualize search cli
+# > atuin
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+export GPG_TTY=$(tty)
+
+# run neofetch
+# neofetch
+
+# golang 1.23
+export PATH="/opt/homebrew/opt/go@1.23/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+# SET KITTY_MOD KEYBIND
+# run this in cli:
+# set kitty_mod ctrl+shift
+
+# opencode
+export PATH=/Users/user_1/.opencode/bin:$PATH
+
+# Added by Antigravity
+export PATH="/Users/user_1/.antigravity/antigravity/bin:$PATH"
+
+# Install plugin
+# "opencode-antigravity-auth@latest"
+# 1. go to ~/.opencode/config.json
+# 2. edit plugin
+#Run opencode auth login to authenticate with Google OAuth (if needed)
+#The plugin will be installed automatically when you next run OpenCode
+
+### OPEN CODE Guide
+## installation
+# curl -fsSL https://opencode.ai/install | bash
+## configs
+# cat ~/.opencode/oh-my-opencode.json
+# cat ~/.opencode/config.json
+## MCP
+# Where I Put the .mcp.json Files
+# ~/.claude/plugins/marketplaces/claude-plugins-official/external_plugins/memory/.mcp.json
+# ~/.claude/plugins/marketplaces/claude-plugins-official/external_plugins/openspec/.mcp.json
+# Context7
+# filesystem
+# grep_app
+# sequential-thinking
+# memory
+# tavily-remote-mcp
+# openspec
+# websearch
+## Provider
+# GLM Z.AI Coding Plan
+# Google Antigravity
+## Plugins (they named it Ecosystem)
+# https://opencode.ai/docs/ecosystem/
+# opencode-antigravity-auth
+
+## OpenSpec
+# npm install -g @fission-ai/openspec@latest
+# openspec init
+
+# AI PROMPT Tutorial                      
+# create comprehensive langraph for me, decide how many components for my learning journey. Each topic must be served as a one main file. 
+# The main file format prefix should be 01_<topic>.py.
+# each topic also have explanation in md file with format 01_<topic>.md
+# each md must include
+# 1. What to learn
+# 2. Flow
+# 3. Input
+# 4. Output
+# 5. Try Yourself
+ 
+## Vi
+# auto line number
+# vi --version
+# touch ~/.vimrc
+# vi ~/.vimrc
+#" explicit, no surprises
+#set number
+#set relativenumber
